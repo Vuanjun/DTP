@@ -518,7 +518,6 @@ body {
   width: 25%;
   padding-top: 12.5%;
   padding-bottom: 12.5%;
-  background-color: red;
   margin-right: 12.5%;
 }
 .second-row .left-box .wrap-of-image {
@@ -528,10 +527,22 @@ body {
   width: 37.5%;
   margin-right: 12.5%;
   padding-bottom: 12.5%;
-  background-color: blue;
 }
 .second-row .middle-box .wrap-of-image {
-  padding-top: 79.16%;
+  padding-top: 66.66%;
+}
+
+.third-row {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.third-row .left-box {
+  width: 100%;
+  padding-bottom: 12.5%;
+}
+.third-row .left-box .wrap-of-image {
+  overflow: hidden;
+  padding-top: 37.5%;
 }
 
 .wrap-of-image {
