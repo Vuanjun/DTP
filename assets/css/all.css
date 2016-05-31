@@ -457,7 +457,7 @@ body {
 }
 .page-index .nav-link-group a {
   color: #000;
-  font-family: Brandon Blk;
+  font-family: Brandon Bld;
   font-size: 96px;
   font-size: 7.8vw;
   line-height: 1.1em;
@@ -467,51 +467,82 @@ body {
 .page-showcase {
   width: 100%;
   height: 100%;
-  padding: 36px;
-  box-sizing: border-box;
+}
+
+.page-content {
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
 }
 
-.page-title {
-  position: fixed;
-  top: 36px;
-  left: 36px;
-  right: 36px;
-  color: #000;
-  font-family: Brandon Blk;
-  font-size: 96px;
-  font-size: 7.8vw;
-  line-height: 1.1em;
-  letter-spacing: 0.375px;
+.page-third-tenth-height {
+  display: flex;
+  flex: 3;
 }
 
-.page-content-section {
+.page-fourth-tenth-height {
   display: flex;
-  flex-direction: row;
+  flex: 4;
 }
 
-.page-content-section {
-  display: flex;
+.first-row {
+  margin-left: 60px;
+  margin-right: 60px;
 }
-.page-content-section-left, .page-content-section-middle, .page-content-section-right {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+.first-row .left-box {
+  width: 25%;
+  margin-right: 12.5%;
 }
-.page-content-section-left {
-  margin-top: 144px;
+.first-row .left-box .wrap-of-image {
+  padding-top: 150%;
 }
-.page-content-section-middle {
-  margin-top: 180px;
+.first-row .middle-box {
+  width: 25%;
+  margin-right: 12.5%;
+}
+.first-row .middle-box .wrap-of-image {
+  padding-top: 100%;
+}
+.first-row .right-box {
+  width: 25%;
+}
+.first-row .right-box .wrap-of-image {
+  padding-top: 50%;
+}
+
+.second-row {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.second-row .left-box {
+  width: 25%;
+  padding-top: 12.5%;
+  padding-bottom: 12.5%;
+  background-color: red;
+  margin-right: 12.5%;
+}
+.second-row .left-box .wrap-of-image {
+  padding-top: 100%;
+}
+.second-row .middle-box {
+  width: 37.5%;
+  margin-right: 12.5%;
+  padding-bottom: 12.5%;
+  background-color: blue;
+}
+.second-row .middle-box .wrap-of-image {
+  padding-top: 79.16%;
 }
 
 .wrap-of-image {
   width: 100%;
-  padding: 12px;
+  position: relative;
   box-sizing: border-box;
 }
 
 .content-of-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
 }
