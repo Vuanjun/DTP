@@ -92,8 +92,11 @@ a {
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 
+a,
 a:active,
+a:visited,
 a:hover {
+  color: black;
   outline: 0;
 }
 

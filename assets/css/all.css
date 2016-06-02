@@ -86,8 +86,11 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+a,
 a:active,
+a:visited,
 a:hover {
+  color: black;
   outline: 0;
 }
 
@@ -449,19 +452,90 @@ body {
   height: 100%;
 }
 
-.page-index {
-  width: 100%;
-  height: 100%;
-  padding: 36px;
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 48px 0 48px;
   box-sizing: border-box;
 }
-.page-index .nav-link-group a {
-  color: #000;
+.home .first-nav {
+  width: 100%;
+  margin-left: -6px;
+}
+.home .first-nav .top {
+  margin-right: 24px;
+}
+.home .first-nav .publishing {
+  margin-right: 24px;
+}
+.home .first-nav-item {
+  display: inline-block;
+}
+.home .first-nav-item-link {
+  width: 100%;
+  display: block;
+  font-family: Brandon Blk;
+  font-size: 6.4vw;
+}
+.home .first-nav-item-link:hover {
+  color: #5479BC;
+}
+.home .second-nav,
+.home .third-nav {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.home .second-nav-item,
+.home .third-nav-item {
+  display: inline-block;
+}
+.home .second-nav-item:first-child,
+.home .third-nav-item:first-child {
+  margin-right: 18px;
+}
+.home .second-nav-item-link,
+.home .third-nav-item-link {
+  width: 100%;
+  display: block;
   font-family: Brandon Bld;
-  font-size: 96px;
-  font-size: 7.8vw;
-  line-height: 1.1em;
-  letter-spacing: 0.375px;
+  font-size: 2vw;
+}
+.home .second-nav-item-link:hover,
+.home .third-nav-item-link:hover {
+  text-decoration: underline;
+}
+.home .second-nav-item-link .active,
+.home .third-nav-item-link .active {
+  text-decoration: underline;
+}
+.home .about-section {
+  width: 40%;
+}
+.home .about-section .eng-des {
+  font-family: Brandon Bld;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.home .about-section .zh-des {
+  font-size: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.home .about-section .info-group {
+  margin-top: 96px;
+  font-family: Brandon Bld;
+}
+.home .about-section .info-group .contact-group,
+.home .about-section .info-group .follow-group {
+  display: flex;
+}
+.home .about-section .info-group .contact-label,
+.home .about-section .info-group .follow-label {
+  margin-right: 6px;
+}
+.home .about-section .info-group .follow-value {
+  text-decoration: underline;
 }
 
 .page-showcase {
