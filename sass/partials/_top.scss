@@ -1,8 +1,8 @@
-.home {
+.top {
   
   // display: flex;
   // flex-direction: column;
-  position: relative;
+
   padding: 14px 48px 0 48px;
   box-sizing: border-box;
   
@@ -31,11 +31,20 @@
     font-size: 6.4vw;
   }
   
+  .show {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .second-nav {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+  }
 
   .second-nav,
   .third-nav {
-    position: fixed;
-    z-index: 2;
+
     width: 100%;
     top: 144px;
     margin-bottom: 24px;
@@ -49,6 +58,9 @@
   }
   .second-nav-item-link,
   .third-nav-item-link {
+    &:hover {
+      text-decoration: underline;
+    }
     .active {
       text-decoration: underline;
     }
@@ -60,8 +72,6 @@
   
   .about-section {
     width: 50%;
-    position: absolute;
-    top: 214px;
     .eng-des {
       font-family: Brandon Bld;
       font-size: 18px;
@@ -74,7 +84,7 @@
       font-weight: bold;
     }
     .info-group {
-      margin-top: 144px;
+      margin-top: 96px;
       font-family: Brandon Bld;
       
       .contact-group,
@@ -96,8 +106,7 @@
 
   .people-section {
     width: 50%;
-    position: absolute;
-    top: 214px;
+    
     .names-of-people {
       
       font-family: Brandon Bld;
@@ -130,10 +139,6 @@
           font-size: 12px;
           font-family: Brandon Bld;
           
-          a:hover {
-            text-decoration: underline;
-          }
-
           .workplace {
             flex: 2;
           }
